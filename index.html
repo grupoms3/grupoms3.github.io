@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MS GROUP | Diseño, Construcción, Remodelación y Servicios en Lima</title>
+  <meta name="description" content="MS GROUP ofrece diseño de interiores, construcción y remodelación, pintura, limpieza y accesorios para autos y motos en Lima Metropolitana y Callao. Solicita tu cotización por WhatsApp.">
+  <meta name="keywords" content="diseño de interiores Lima, construcción Lima, remodelación Lima, pintura, limpieza, accesorios para autos, accesorios para motos, Callao">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="MS GROUP - J&C COMERCIAL E INGENIERIA SAC">
+  <meta name="theme-color" content="#071b2b">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="MS GROUP | Soluciones que hacen crecer tu negocio">
+  <meta property="og:description" content="Diseño de interiores, construcción, remodelación, pintura, limpieza y accesorios para autos y motos.">
+  <meta property="og:type" content="website">
+
+  <!-- Datos estructurados para Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "MS GROUP",
+    "legalName": "J&C COMERCIAL E INGENIERIA SAC",
+    "description": "Servicios integrales de diseño de interiores, construcción, remodelación, pintura, limpieza y accesorios para autos y motos.",
+    "areaServed": ["Lima Metropolitana", "Callao"],
+    "url": "",
+    "telephone": "",
+    "priceRange": "$$"
+  }
+  </script>
+
+  <style>
+    :root{
+      --navy:#071b2b;
+      --navy-2:#0b2940;
+      --blue:#174f73;
+      --blue-2:#1f638d;
+      --yellow:#fdbb18;
+      --yellow-2:#ffca3a;
+      --white:#fff;
+      --text:#122333;
+      --muted:#617181;
+      --line:#e5ebf0;
+      --soft:#f5f8fa;
+      --radius:22px;
+      --shadow:0 18px 50px rgba(7,27,43,.12);
+      --max:1160px;
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:Arial, Helvetica, sans-serif;
+      color:var(--text);
+      background:#fff;
+      line-height:1.6;
+    }
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block}
+    button,input,textarea,select{font:inherit}
+
+    .topbar{
+      background:var(--navy);
+      color:#eaf3f8;
+      font-size:14px;
+    }
+    .topbar .inner{
+      max-width:var(--max);
+      margin:auto;
+      padding:10px 20px;
+      display:flex;
+      justify-content:space-between;
+      gap:20px;
+    }
+
+    header{
+      position:sticky;
+      top:0;
+      z-index:50;
+      background:rgba(255,255,255,.96);
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid #edf1f4;
+    }
+    .nav{
+      max-width:var(--max);
+      margin:auto;
+      padding:18px 20px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:24px;
+    }
+    .logo{
+      font-weight:900;
+      font-size:25px;
+      letter-spacing:-1px;
+      white-space:nowrap;
+    }
+    .logo span{color:var(--yellow)}
+    nav{display:flex;align-items:center;gap:26px;font-weight:700}
+    nav a:hover{color:var(--blue-2)}
+    .nav-cta{
+      background:var(--navy);
+      color:#fff;
+      padding:13px 20px;
+      border-radius:13px;
+    }
+    .menu-btn{display:none;border:0;background:var(--navy);color:#fff;padding:10px 13px;border-radius:10px}
+
+    .hero{
+      color:#fff;
+      background:
+        radial-gradient(circle at 85% 35%, rgba(51,133,183,.45), transparent 33%),
+        linear-gradient(120deg,var(--navy),#0b3856 60%,#15577d);
+      overflow:hidden;
+    }
+    .hero-inner{
+      max-width:var(--max);
+      margin:auto;
+      padding:95px 20px 90px;
+      display:grid;
+      grid-template-columns:1.08fr .92fr;
+      gap:60px;
+      align-items:center;
+    }
+    .eyebrow{
+      display:inline-flex;
+      border:1px solid rgba(253,187,24,.7);
+      color:var(--yellow-2);
+      padding:7px 13px;
+      border-radius:999px;
+      font-size:13px;
+      font-weight:900;
+      letter-spacing:.3px;
+      margin-bottom:25px;
+    }
+    h1{
+      font-size:clamp(45px,6vw,78px);
+      line-height:.99;
+      letter-spacing:-3px;
+      max-width:720px;
+      margin-bottom:25px;
+    }
+    .hero p{
+      color:#e1edf4;
+      font-size:19px;
+      max-width:700px;
+      margin-bottom:32px;
+    }
+    .actions{display:flex;flex-wrap:wrap;gap:13px}
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:9px;
+      min-height:54px;
+      padding:0 22px;
+      border-radius:13px;
+      border:1px solid transparent;
+      font-weight:900;
+      cursor:pointer;
+      transition:.2s ease;
+    }
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{background:var(--yellow);color:#071b2b}
+    .btn-outline{border-color:#dbe9f1;color:#fff;background:transparent}
+    .btn-dark{background:var(--navy);color:#fff}
+    .btn-whatsapp{background:#20c66b;color:#fff}
+
+    .hero-card{
+      background:#fff;
+      color:var(--text);
+      border-radius:24px;
+      padding:32px;
+      box-shadow:0 30px 70px rgba(0,0,0,.18);
+    }
+    .hero-card h2{font-size:23px;margin-bottom:12px}
+    .service-mini{
+      display:flex;
+      align-items:center;
+      gap:15px;
+      padding:18px 0;
+      border-bottom:1px solid var(--line);
+    }
+    .service-mini:last-child{border-bottom:0}
+    .icon{
+      width:38px;height:38px;display:grid;place-items:center;
+      border-radius:11px;background:#fff5d6;font-size:21px;flex:none;
+    }
+    .service-mini strong{display:block;font-size:17px}
+    .service-mini small{color:var(--muted);font-size:14px}
+
+    section{padding:88px 20px}
+    .container{max-width:var(--max);margin:auto}
+    .section-head{max-width:760px;margin-bottom:40px}
+    .kicker{
+      color:#9a6a00;
+      text-transform:uppercase;
+      letter-spacing:1.3px;
+      font-size:12px;
+      font-weight:900;
+      margin-bottom:8px;
+    }
+    h2.section-title{
+      font-size:clamp(32px,4vw,48px);
+      line-height:1.08;
+      letter-spacing:-1.6px;
+      margin-bottom:12px;
+    }
+    .lead{color:var(--muted);font-size:18px}
+
+    .services{background:#fff}
+    .service-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+    }
+    .service-card{
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:28px;
+      background:#fff;
+      transition:.2s;
+    }
+    .service-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+    .service-card .big-icon{
+      width:54px;height:54px;border-radius:15px;
+      display:grid;place-items:center;
+      background:#fff4d0;font-size:28px;margin-bottom:20px;
+    }
+    .service-card h3{font-size:21px;margin-bottom:8px}
+    .service-card p{color:var(--muted);margin-bottom:18px}
+    .service-link{font-weight:900;color:var(--blue-2)}
+
+    .about{background:var(--soft)}
+    .about-grid{
+      display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center
+    }
+    .about-box{
+      background:linear-gradient(135deg,var(--navy),#154e70);
+      color:#fff;border-radius:28px;padding:42px;min-height:370px;
+      display:flex;flex-direction:column;justify-content:flex-end;
+    }
+    .about-box .number{font-size:74px;font-weight:900;color:var(--yellow);line-height:1}
+    .about-box h3{font-size:29px;margin-top:8px}
+    .checks{display:grid;gap:17px;margin-top:25px}
+    .check{display:flex;gap:12px}
+    .check b{color:#08734a}
+
+    .process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .step{
+      border:1px solid var(--line);border-radius:20px;padding:25px;background:#fff
+    }
+    .step-num{
+      width:40px;height:40px;border-radius:50%;display:grid;place-items:center;
+      background:var(--yellow);font-weight:900;margin-bottom:18px
+    }
+    .step h3{margin-bottom:7px}
+    .step p{color:var(--muted);font-size:15px}
+
+    .gallery{background:var(--soft)}
+    .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .gallery-item{
+      min-height:245px;border-radius:20px;
+      background:linear-gradient(135deg,#dce7ed,#f8fafb);
+      border:1px dashed #aebfca;
+      display:flex;align-items:center;justify-content:center;
+      text-align:center;padding:25px;color:#607481;font-weight:700;
+    }
+    .gallery-item span{display:block;font-size:34px;margin-bottom:8px}
+
+    .products{background:#fff}
+    .product-box{
+      border-radius:28px;
+      padding:40px;
+      background:linear-gradient(120deg,#fff7dd,#fff);
+      border:1px solid #f3df9e;
+      display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center
+    }
+    .product-box h3{font-size:32px;line-height:1.1;margin-bottom:12px}
+    .product-box p{color:var(--muted);max-width:680px}
+    .product-placeholder{
+      border:2px dashed #d7bd63;border-radius:20px;min-height:190px;
+      display:grid;place-items:center;text-align:center;color:#8a701e;padding:20px
+    }
+
+    .quote{background:var(--navy);color:#fff}
+    .quote-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px;align-items:start}
+    .quote .lead{color:#cbdce7}
+    form{background:#fff;color:var(--text);padding:30px;border-radius:24px}
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+    .field{display:grid;gap:7px;margin-bottom:15px}
+    .field.full{grid-column:1/-1}
+    label{font-size:13px;font-weight:800}
+    input,textarea,select{
+      width:100%;border:1px solid #d9e2e8;border-radius:11px;padding:13px 14px;
+      outline:none;background:#fff;
+    }
+    input:focus,textarea:focus,select:focus{border-color:#5a8eac;box-shadow:0 0 0 3px rgba(31,99,141,.1)}
+    textarea{min-height:120px;resize:vertical}
+    .form-note{font-size:12px;color:#71808a;margin-top:9px}
+
+    .contact-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:30px}
+    .contact-card{border:1px solid rgba(255,255,255,.15);border-radius:18px;padding:20px}
+    .contact-card strong{display:block;margin-bottom:4px}
+    .contact-card span{color:#cbdce7;font-size:14px}
+
+    footer{background:#04121f;color:#c8d5de;padding:40px 20px 25px}
+    .footer-grid{
+      max-width:var(--max);margin:auto;display:flex;justify-content:space-between;
+      gap:30px;padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,.12)
+    }
+    .footer-brand{color:#fff;font-size:23px;font-weight:900}
+    .footer-brand span{color:var(--yellow)}
+    .legal{font-size:13px;color:#94a8b5;margin-top:8px}
+    .copyright{max-width:var(--max);margin:18px auto 0;font-size:12px;color:#718593}
+
+    .floating-wa{
+      position:fixed;right:20px;bottom:20px;width:68px;height:68px;border-radius:50%;
+      background:#20c66b;color:#fff;display:grid;place-items:center;
+      font-size:30px;box-shadow:0 12px 30px rgba(0,0,0,.22);z-index:60
+    }
+    .floating-wa:hover{transform:scale(1.05)}
+
+    @media(max-width:900px){
+      nav{display:none}
+      .menu-btn{display:block}
+      .hero-inner,.about-grid,.quote-grid,.product-box{grid-template-columns:1fr}
+      .hero-inner{padding-top:65px}
+      .service-grid{grid-template-columns:repeat(2,1fr)}
+      .process-grid{grid-template-columns:repeat(2,1fr)}
+      .gallery-grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media(max-width:620px){
+      .topbar .inner{font-size:12px}
+      .topbar .inner span:last-child{display:none}
+      .nav{padding:14px 16px}
+      .logo{font-size:21px}
+      section{padding:65px 16px}
+      .hero-inner{padding:58px 16px 65px}
+      h1{font-size:47px;letter-spacing:-2px}
+      .hero p{font-size:17px}
+      .hero-card{padding:22px}
+      .service-grid,.process-grid,.gallery-grid,.contact-cards{grid-template-columns:1fr}
+      .form-grid{grid-template-columns:1fr}
+      .field.full{grid-column:auto}
+      .product-box{padding:25px}
+      .footer-grid{flex-direction:column}
+      .floating-wa{width:60px;height:60px;right:15px;bottom:15px}
+    }
+  </style>
+</head>
+
+<body id="inicio">
+
+  <div class="topbar">
+    <div class="inner">
+      <span>Servicios integrales · Lima Metropolitana y Callao</span>
+      <span>Atención por WhatsApp</span>
+    </div>
+  </div>
+
+  <header>
+    <div class="nav">
+      <a class="logo" href="#inicio">MS <span>GROUP</span></a>
+      <nav>
+        <a href="#servicios">Servicios</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#trabajos">Trabajos</a>
+        <a href="#productos">Productos</a>
+        <a href="#contacto">Contacto</a>
+        <a class="nav-cta" href="#cotizacion">Cotizar</a>
+      </nav>
+      <button class="menu-btn" onclick="toggleMenu()" aria-label="Abrir menú">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <div class="eyebrow">UN SOLO CONTACTO · MÚLTIPLES SOLUCIONES</div>
+          <h1>Soluciones que hacen crecer tu negocio.</h1>
+          <p>
+            Diseño de interiores, construcción y remodelación, pintura, limpieza
+            y accesorios para autos y motos. Cuéntanos lo que necesitas y
+            preparamos una solución a tu medida.
+          </p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#cotizacion">Solicitar cotización</a>
+            <a class="btn btn-outline" href="#servicios">Explorar servicios</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <h2>Soluciones que ofrecemos</h2>
+
+          <div class="service-mini">
+            <div class="icon">🏠</div>
+            <div><strong>Diseño de interiores</strong><small>Diseño, renovación y acabados</small></div>
+          </div>
+          <div class="service-mini">
+            <div class="icon">🏗️</div>
+            <div><strong>Construcción y remodelación</strong><small>Obras, remodelaciones y mantenimiento</small></div>
+          </div>
+          <div class="service-mini">
+            <div class="icon">🎨</div>
+            <div><strong>Pintura</strong><small>Interiores, exteriores y acabados</small></div>
+          </div>
+          <div class="service-mini">
+            <div class="icon">🧹</div>
+            <div><strong>Limpieza</strong><small>Hogares, oficinas y espacios comerciales</small></div>
+          </div>
+          <div class="service-mini">
+            <div class="icon">🚗</div>
+            <div><strong>Accesorios para autos</strong><small>Venta e instalación</small></div>
+          </div>
+          <div class="service-mini">
+            <div class="icon">🏍️</div>
+            <div><strong>Accesorios para motos</strong><small>Venta e instalación</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios" class="services">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">Nuestros servicios</div>
+          <h2 class="section-title">Todo lo que necesitas, en un solo lugar.</h2>
+          <p class="lead">Atención para hogares, oficinas, comercios y proyectos empresariales en Lima Metropolitana y Callao.</p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="big-icon">🏠</div>
+            <h3>Diseño de interiores</h3>
+            <p>Diseño, distribución, renovación y acabados para crear espacios funcionales y modernos.</p>
+            <a class="service-link" href="#cotizacion" onclick="setService('Diseño de interiores')">Cotizar →</a>
+          </article>
+
+          <article class="service-card">
+            <div class="big-icon">🏗️</div>
+            <h3>Construcción y remodelación</h3>
+            <p>Remodelaciones, mantenimiento, mejoras de ambientes y ejecución de proyectos.</p>
+            <a class="service-link" href="#cotizacion" onclick="setService('Construcción y remodelación')">Cotizar →</a>
+          </article>
+
+          <article class="service-card">
+            <div class="big-icon">🎨</div>
+            <h3>Pintura</h3>
+            <p>Pintura interior y exterior, preparación de superficies y acabados para renovar tus espacios.</p>
+            <a class="service-link" href="#cotizacion" onclick="setService('Pintura')">Cotizar →</a>
+          </article>
+
+          <article class="service-card">
+            <div class="big-icon">🧹</div>
+            <h3>Limpieza</h3>
+            <p>Limpieza de hogares, oficinas, locales y espacios que requieren una presentación impecable.</p>
+            <a class="service-link" href="#cotizacion" onclick="setService('Limpieza')">Cotizar →</a>
+          </article>
+
+          <article class="service-card">
+            <div class="big-icon">🚗</div>
+            <h3>Accesorios para autos</h3>
+            <p>Accesorios seleccionados y servicio de instalación para personalizar y mejorar tu vehículo.</p>
+            <a class="service-link" href="#cotizacion" onclick="setService('Accesorios para autos')">Cotizar →</a>
+          </article>
+
+          <article class="service-card">
+            <div class="big-icon">🏍️</div>
+            <h3>Accesorios para motos</h3>
+            <p>Accesorios y complementos para motos, con opción de instalación según el producto.</p>
+            <a class="service-link" href="#cotizacion" onclick="setService('Accesorios para motos')">Cotizar →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="nosotros" class="about">
+      <div class="container about-grid">
+        <div class="about-box">
+          <div class="number">360°</div>
+          <h3>Una visión integral para cada proyecto.</h3>
+          <p>Unimos servicios, experiencia y coordinación para que tengas un solo punto de contacto.</p>
+        </div>
+
+        <div>
+          <div class="kicker">Presentación empresarial</div>
+          <h2 class="section-title">Trabajamos para que tu proyecto avance.</h2>
+          <p class="lead">
+            En MS GROUP desarrollamos soluciones prácticas para mejorar espacios,
+            ejecutar proyectos y complementar vehículos con productos y servicios.
+          </p>
+
+          <div class="checks">
+            <div class="check"><b>✓</b><span>Atención personalizada y orientación antes de iniciar.</span></div>
+            <div class="check"><b>✓</b><span>Cotizaciones según las necesidades reales de cada proyecto.</span></div>
+            <div class="check"><b>✓</b><span>Servicios para clientes particulares y empresas.</span></div>
+            <div class="check"><b>✓</b><span>Cobertura en Lima Metropolitana y Callao.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">Cómo trabajamos</div>
+          <h2 class="section-title">Simple, claro y orientado a resultados.</h2>
+        </div>
+
+        <div class="process-grid">
+          <div class="step"><div class="step-num">1</div><h3>Cuéntanos</h3><p>Indícanos qué necesitas y dónde se realizará el trabajo.</p></div>
+          <div class="step"><div class="step-num">2</div><h3>Evaluamos</h3><p>Revisamos los requerimientos y definimos el alcance.</p></div>
+          <div class="step"><div class="step-num">3</div><h3>Cotizamos</h3><p>Preparamos una propuesta de acuerdo con tu proyecto.</p></div>
+          <div class="step"><div class="step-num">4</div><h3>Ejecutamos</h3><p>Coordinamos el servicio y avanzamos contigo.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="trabajos" class="gallery">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">Portafolio</div>
+          <h2 class="section-title">Nuestros trabajos</h2>
+          <p class="lead">Esta galería está preparada para colocar fotos reales de tus proyectos.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item"><div><span>📷</span>Foto real de diseño de interiores</div></div>
+          <div class="gallery-item"><div><span>📷</span>Foto real de remodelación</div></div>
+          <div class="gallery-item"><div><span>📷</span>Foto real de pintura</div></div>
+          <div class="gallery-item"><div><span>📷</span>Foto real de limpieza</div></div>
+          <div class="gallery-item"><div><span>📷</span>Foto real de accesorios para autos</div></div>
+          <div class="gallery-item"><div><span>📷</span>Foto real de accesorios para motos</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="productos" class="products">
+      <div class="container">
+        <div class="product-box">
+          <div>
+            <div class="kicker">Próximamente</div>
+            <h3>🛒 Venta de productos</h3>
+            <p>
+              Esta sección queda preparada para convertir la página en una tienda:
+              catálogo, fichas de producto, precios, promociones y posteriormente
+              un sistema de carrito y pagos.
+            </p>
+            <br>
+            <a class="btn btn-dark" href="#cotizacion">Consultar productos</a>
+          </div>
+          <div class="product-placeholder">
+            <div><strong>CATÁLOGO DE PRODUCTOS</strong><br>Espacio listo para incorporar productos y fotos.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cotizacion" class="quote">
+      <div class="container quote-grid">
+        <div>
+          <div class="kicker" style="color:var(--yellow)">Cotiza tu proyecto</div>
+          <h2 class="section-title">Cuéntanos qué necesitas.</h2>
+          <p class="lead">
+            Completa el formulario y se abrirá WhatsApp con tu solicitud
+            lista para enviar.
+          </p>
+
+          <div class="contact-cards" id="contacto">
+            <div class="contact-card"><strong>📍 Zona</strong><span>Lima Metropolitana y Callao</span></div>
+            <div class="contact-card"><strong>📲 WhatsApp</strong><span>Atención directa</span></div>
+            <div class="contact-card"><strong>⏱️ Respuesta</strong><span>Coordinamos según tu solicitud</span></div>
+          </div>
+        </div>
+
+        <form id="quoteForm" onsubmit="sendWhatsApp(event)">
+          <div class="form-grid">
+            <div class="field">
+              <label for="name">Nombre *</label>
+              <input id="name" required placeholder="Tu nombre">
+            </div>
+            <div class="field">
+              <label for="phone">Celular *</label>
+              <input id="phone" required inputmode="tel" placeholder="9XXXXXXXX">
+            </div>
+            <div class="field full">
+              <label for="service">Servicio *</label>
+              <select id="service" required>
+                <option value="">Selecciona un servicio</option>
+                <option>Diseño de interiores</option>
+                <option>Construcción y remodelación</option>
+                <option>Pintura</option>
+                <option>Limpieza</option>
+                <option>Accesorios para autos</option>
+                <option>Accesorios para motos</option>
+                <option>Venta de productos</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="location">Distrito / ubicación *</label>
+              <input id="location" required placeholder="Ej. Miraflores, Lima">
+            </div>
+            <div class="field full">
+              <label for="message">¿Qué necesitas?</label>
+              <textarea id="message" placeholder="Cuéntanos brevemente sobre tu proyecto..."></textarea>
+            </div>
+          </div>
+          <button class="btn btn-whatsapp" type="submit" style="width:100%">📲 Enviar cotización por WhatsApp</button>
+          <div class="form-note">Al enviar, se abrirá WhatsApp con la información que ingresaste.</div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">MS <span>GROUP</span></div>
+        <div>Soluciones que hacen crecer tu negocio.</div>
+        <div class="legal">J&C COMERCIAL E INGENIERIA SAC · RUC: 20612623342</div>
+      </div>
+      <div>
+        <div>Diseño · Construcción · Pintura · Limpieza · Autos · Motos</div>
+        <div class="legal">Lima Metropolitana y Callao</div>
+      </div>
+    </div>
+    <div class="copyright">© <span id="year"></span> MS GROUP. Todos los derechos reservados.</div>
+  </footer>
+
+  <!-- BOTÓN DE WHATSAPP -->
+  <a class="floating-wa" id="floatingWA" href="#" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">◉</a>
+
+  <script>
+    /*
+      =========================================================
+      CONFIGURACIÓN
+      =========================================================
+      CAMBIA SOLO ESTE NÚMERO por el WhatsApp de tu empresa.
+      Formato: código de país + número, SIN +, espacios ni guiones.
+      Perú = 51.
+      Ejemplo: 51987654321
+    */
+    const WHATSAPP_NUMBER = "51955003687";
+
+    const defaultWhatsAppText =
+      "Hola MS GROUP, quiero solicitar información sobre sus servicios.";
+
+    function whatsappUrl(text){
+      return "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(text);
+    }
+
+    function setService(service){
+      setTimeout(() => {
+        const select = document.getElementById("service");
+        if(select) select.value = service;
+      }, 100);
+    }
+
+    function sendWhatsApp(event){
+      event.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const phone = document.getElementById("phone").value.trim();
+      const service = document.getElementById("service").value;
+      const location = document.getElementById("location").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      const text =
+        "Hola MS GROUP 👋%0A%0A" +
+        "*SOLICITUD DE COTIZACIÓN*%0A" +
+        "Nombre: " + name + "%0A" +
+        "Celular: " + phone + "%0A" +
+        "Servicio: " + service + "%0A" +
+        "Ubicación: " + location + "%0A" +
+        "Detalle: " + (message || "No especificado");
+
+      window.open("https://wa.me/" + WHATSAPP_NUMBER + "?text=" + text, "_blank");
+    }
+
+    function toggleMenu(){
+      const nav = document.querySelector("nav");
+      const isOpen = nav.style.display === "flex";
+      if(window.innerWidth <= 900){
+        nav.style.display = isOpen ? "none" : "flex";
+        nav.style.position = "absolute";
+        nav.style.top = "70px";
+        nav.style.left = "16px";
+        nav.style.right = "16px";
+        nav.style.padding = "18px";
+        nav.style.background = "#fff";
+        nav.style.border = "1px solid #e5ebf0";
+        nav.style.borderRadius = "16px";
+        nav.style.flexDirection = "column";
+        nav.style.alignItems = "stretch";
+      }
+    }
+
+    document.getElementById("floatingWA").href = whatsappUrl(defaultWhatsAppText);
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
